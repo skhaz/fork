@@ -1,5 +1,6 @@
 import sys
 import life
+import random
 from datetime import date
 
 from family import Camila as Mommy
@@ -10,7 +11,7 @@ class Baby(Mommy, Daddy):
 
   def __init__(baby):
     if baby.gender == Gender.Male:
-      baby.name = 'Logan'
+      baby.name = random.choice(['Logan', 'Otto', 'Eric'])
     elif baby.gender == Gender.Female:
       baby.name = 'Laura'
     baby.expected_born_date = date(day=5, month=5, year=2019)
