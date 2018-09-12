@@ -1,5 +1,6 @@
 import sys
 import life
+from datetime import date
 
 from family import Camila as Mommy
 from family import Rodrigo as Daddy
@@ -9,6 +10,7 @@ class Baby(Mommy, Daddy):
 
   def __init__(baby):
     baby.name = '???'
+    baby.expected_born_date = date(day=5, month=5, year=2019)
     
   def run(baby):
     with life.World() as world:
