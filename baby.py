@@ -10,10 +10,8 @@ from family import Rodrigo as Daddy
 class Baby(Mommy, Daddy):
 
   def __init__(baby):
-    if baby.gender == Gender.Male:
-      baby.name = random.choice(['Logan', 'Otto', 'Eric'])
-    elif baby.gender == Gender.Female:
-      baby.name = 'Laura'
+    baby.gender = Gender.Male:
+    baby.name = random.choice(['Logan', 'Otto', 'Henrique', 'Rafael'])
     baby.expected_born_date = date(day=5, month=5, year=2019)
 
   def run(baby):
