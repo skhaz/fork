@@ -11,7 +11,7 @@ class Baby(Mommy, Daddy):
 
   def __init__(baby):
     baby.gender = Gender.Male:
-    baby.name = random.choice(['Logan', 'Otto', 'Henrique', 'Rafael'])
+    baby.name = 'Henrique'
     baby.expected_born_date = date(day=5, month=5, year=2019)
 
   def run(baby):
@@ -23,4 +23,3 @@ class Baby(Mommy, Daddy):
           baby.sleep()
         except Exception as cry:
           print(cry, file=sys.stderr)
-
